@@ -1,118 +1,113 @@
-# Udaan - Disability Bridge
+# 🌉 Udaan: Bridging the Accessibility Gap
 
-A comprehensive platform bridging disabilities through accessible employment opportunities, community support, and innovative technology integration.
+### *India's First Integrated Ecosystem for PwD Employment, Welfare, and Advocacy*
 
-## Project Overview
+Udaan is not just a portal; it is a holistic infrastructure designed to empower the 2.68 crore Persons with Disabilities in India. By integrating AI, Blockchain, and real-time accessibility tools, we solve the fragmentation of information and the lack of verified inclusive opportunities.
 
-This monorepo contains three main components:
+---
 
-### Frontend
-- **Framework**: Vite + React with TypeScript
-- **Key Features**:
-  - Accessibility toolbar with WCAG compliance
-  - Real-time speech recognition and captions
-  - ISL (Indian Sign Language) panel support
-  - Floating accessibility widget
-  - Braille text support
-  - Voice router for hands-free navigation
+## 🌟 The Udaan Advantage: 12 Unique Features
+*No single Indian platform currently offers this comprehensive suite of accessibility tools.*
 
-### Backend
-- **Stack**: Node.js + Express
-- **Services**:
-  - ML pipeline integration (TensorFlow Lite models)
-  - MediaPipe extractor for gesture recognition
-  - Sentence recognizer for ASL/ISL
-  - Schema engine for dynamic form management
-  - WhatsApp integration via Twilio
-  - PostgreSQL database with migrations
+### 🛠️ For Candidates (PwDs)
 
-### Blockchain
-- **Platform**: Hardhat (Ethereum)
-- **Smart Contracts**: UDID Registry for decentralized identity
+**F1: Crowdsourced Accessibility Map — India's First**
+- Community-rated reviews of restaurants, hospitals, and transit hubs on 5 parameters (Ramp/Lift, Accessible Toilet, Braille Signage, Audio Announcements, and Parking).
+- Integrated with Google Maps API for wheelchair-accessible routing.
 
-## Key Features
+**F4: UDID Application Navigator with Status Tracker**
+- A 12-language guided wizard that pre-fills forms using Aadhaar data and identifies the exact medical authority for your district.
+- Real-time status tracking via automated portal polling.
 
-- 🎯 **Accessibility First**: Built with comprehensive accessibility standards
-- 🔐 **Blockchain Identity**: Decentralized UDID (Universal Disability Identity) management
-- 🗣️ **Multi-modal Communication**: Voice, text, ASL, ISL, Braille support
-- 🤖 **ML-Powered**: Real-time gesture and speech recognition
-- 💼 **Employment Bridge**: Employer and candidate matching platform
-- 🗺️ **Community Maps**: Location-based community resource discovery
-- 📱 **Mobile Optimized**: Responsive design for all devices
+**F5: Scheme Entitlement Engine — "What am I owed?"**
+- AI-driven matching based on UDID band (White/Yellow/Red), state, and disability type. 
+- Aggregates benefits from DEPwD, MSJE, and all 28 state departments in one place.
 
-## Getting Started
+**F8: Emergency SOS — Location Broadcast**
+- One-tap GPS broadcast to 3 pre-saved contacts and the nearest DDRC (District Disability Rehabilitation Centre).
+- Automatically generates timestamped incident reports for RPwD Act grievances.
 
-### Prerequisites
-- Node.js 18+
-- Python 3.9+
-- PostgreSQL
-- Hardhat for blockchain development
+**F9: Voice-First Interface (Multilingual)**
+- 100% operable by voice in Hindi, Kannada, Tamil, Telugu, Bengali, and Marathi.
+- Meets WCAG 2.1 AA and IS 17802 standards, making the platform legally compliant by design.
 
-### Installation
+**F10: Disability Card Digital Wallet**
+- Secure, DigiLocker-style digital storage of UDID and railway concession cards.
+- Future-ready for NFC-tap verification at government counters.
 
+**F11: Community Forum — Peer-to-Peer Knowledge**
+- A moderated network for sharing local "accessibility hacks" and job tips.
+- Expert moderation by certified social workers from NGOs like Enable India.
+
+---
+
+### 🏢 For Employers & HR Teams
+
+**F2: RPwD Compliance Checker for Employers**
+- A 20-question data-driven checklist that generates an instant compliance score and gap report.
+- Passing companies earn the **"DisabilityBridge Verified"** badge for their job listings.
+
+**F6: Accessible Job Portal with Verified Filters**
+- Job listings include real accessibility scores: wheelchair access, ISL interpreter availability, and WFH flexibility.
+- Candidates filter by their specific disability type to find *genuinely* accessible roles.
+
+**F7: Real-Time Auto-Captioning for Video Interviews**
+- A browser-based tool that deaf candidates use during live calls (Google Meet/Zoom).
+- transcribes speech to text in real-time with zero app downloads required.
+
+**F12: Employer DEI Dashboard — B2B Analytics**
+- HR-facing SaaS dashboard to track PwD hiring % against the 3% mandate.
+- Benchmark your company’s inclusion progress against industry peers.
+
+---
+
+### 🌐 For the Ecosystem
+
+**F3: AI-Powered ISL Translation Widget**
+- A floating web widget that converts page text into an **ISL Avatar** performing signs in real-time.
+- Bridges the gap for 18 million deaf Indians served by only 250 certified interpreters.
+
+---
+
+## 🏗️ Technical Architecture
+
+- **Frontend**: React (Vite), TanStack Router, Tailwind CSS, Lucide Icons.
+- **Backend**: Node.js (Express), SQLite (Local State), Supabase (Real-time Bridge).
+- **Blockchain**: Solidity, Hardhat, Ethers.js (UDID Ledger).
+- **AI/ML**: MediaPipe (Gesture Recognition), Groq Llama 3 (RAG & NLP).
+- **Voice**: Web Speech API (Multilingual Recognition).
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+- **Node.js** (v18+)
+- **MetaMask Extension** (Connected to `Localhost 8545`)
+- **Supabase Account** (For Real-time Bridge features)
+- **Twilio Sandbox** (For WhatsApp SOS & Notifications)
+
+### 2. Installation
 ```bash
-# Install frontend dependencies
-cd frontend
-npm install
-
-# Install backend dependencies
-cd ../backend
-npm install
-pip install -r requirements.txt
-
-# Setup blockchain
-cd ../blockchain
-npm install
+git clone https://github.com/YOUR_USERNAME/bridging-disabilities.git
+cd bridging-disabilities && npm install
 ```
 
-### Running the Application
-
+### 3. Blockchain Setup
 ```bash
-# Development server
-cd frontend
+# Terminal 1
+cd blockchain && npx hardhat node
+
+# Terminal 2
+cd blockchain && npx hardhat run scripts/deploy.js --network localhost
+```
+
+### 4. Run the Platform
+```bash
 npm run dev
-
-# Backend API
-cd backend
-npm start
-
-# ML services
-python ml_service.py
 ```
 
-## Project Structure
+---
 
-```
-bridging-disabilities/
-├── frontend/          # React + Vite application
-├── backend/          # Node.js API server
-│   ├── routes/       # API endpoints
-│   ├── services/     # Business logic
-│   ├── ml_service.py # ML pipeline
-│   └── db.js         # Database configuration
-├── blockchain/       # Smart contracts
-└── README.md         # This file
-```
-
-## Recent Updates
-
-- Integrated bridging-disabilities submodule updates
-- Enhanced accessibility components and ML pipeline
-- Improved voice routing and caption functionality
-- Optimized MediaPipe extractor and schema engine
-- Consolidated documentation
-
-## Contributing
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Submit a pull request
-
-## License
-
-MIT
-
-## Support
-
-For accessibility issues or feature requests, please open an issue in the repository.
+## ⚖ License
+MIT © 2026 Udaan Team
